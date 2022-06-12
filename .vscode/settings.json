@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "xalloc.h": "c",
+        "regex.h": "c"
+    }
+}
