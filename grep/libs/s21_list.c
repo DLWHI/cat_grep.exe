@@ -1,5 +1,5 @@
 #include "s21_list.h"
-#include "../common/xalloc.h"
+#include "../../common/xalloc.h"
 #include <stdio.h>
 
 typedef struct snode {

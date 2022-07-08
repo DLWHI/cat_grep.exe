@@ -1,6 +1,6 @@
 #include "s21_storage.h"
 #include <stdio.h>
-#include "../common/xalloc.h"
+#include "../../common/xalloc.h"
 
 long ssize = 0;
 char* door = NULL;

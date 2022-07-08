@@ -2,7 +2,7 @@
 
 SUCCESS=0
 FAIL=0
-FILE_NAME="files/bethoven9.txt"
+FILE_NAME="grep/files/bethoven9.txt"
 PATTERN="-e D"
 REGEX="D?"
 DIFF_OUTPUT=""

@@ -2,7 +2,7 @@
 
 SUCCESS=0
 FAIL=0
-FILE_NAME="files/bethoven9.txt"
+FILE_NAME="cat/files/bethoven9.txt"
 DIFF_OUTPUT=""
 echo "Testing cat with seperate flag combinations..."
 for flag_1 in '' -b -e -n -s -t  #--number-nonblank --number --squeeze-blank
