@@ -10,7 +10,7 @@ GREP_SRC:= ./grep/s21_grep.c
 GREP_LIBS:= ./grep/libs/*.c
 GREP_TEST:= ./grep/test_grep.sh
 
-all: s21_grep
+all: s21_cat s21_grep
 #-----cat-----
 s21_cat: xalloc
 	$(COMP) $(CAT_SRC) $(OBJDIR)/xalloc.o -o s21_cat
