@@ -1,4 +1,4 @@
-#include "s21_list.h"
+#include "list.h"
 #include "../../common/xalloc.h"
 #include <stdio.h>
 

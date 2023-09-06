@@ -5,8 +5,8 @@
 #include <string.h>
 #include <regex.h>
 #include <getopt.h>
-#include "libs/s21_list.h"
-#include "libs/s21_storage.h"
+#include "libs/list.h"
+#include "libs/storage.h"
 
 typedef char gflag_t;
 

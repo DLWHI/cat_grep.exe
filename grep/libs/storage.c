@@ -1,4 +1,4 @@
-#include "s21_storage.h"
+#include "storage.h"
 #include <stdio.h>
 #include "../../common/xalloc.h"
 
