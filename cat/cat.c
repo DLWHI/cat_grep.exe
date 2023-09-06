@@ -34,8 +34,8 @@ char print_help() {
     return -1;
 }
 char invalid_flag(char flag) {
-    fprintf(stderr, "s21_cat: unknown option -- %c\n"
-           "Try \'s21_cat --help\' for more information.", flag);
+    fprintf(stderr, "cat: unknown option -- %c\n"
+           "Try \'cat --help\' for more information.", flag);
     return -1;
 }
 cflag_t get_flags(int argc, char* argv[]) {
@@ -141,7 +141,7 @@ int cat(char* path, cflag_t fls) {
         }
         fclose(txt);
     } else {
-        fprintf(stderr, "s21_cat: %s: No such file or directory", path);
+        fprintf(stderr, "cat: %s: No such file or directory", path);
     }
     return 1;
 }

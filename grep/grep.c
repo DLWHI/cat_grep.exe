@@ -53,7 +53,7 @@ char *help_msg =
 
 char invalid_flag()
 {
-    fprintf(stderr, "Try \'s21_grep --help\' for more information.\n");
+    fprintf(stderr, "Try \'grep --help\' for more information.\n");
     return ERRORFLAG;
 }
 
@@ -148,7 +148,7 @@ int get_patternsf(char *path)
     }
     else
     {
-        fprintf(stderr, "s21_grep: %s: No such file or directory", path);
+        fprintf(stderr, "grep: %s: No such file or directory", path);
         return -1;
     }
     fclose(pattern_file);
@@ -315,7 +315,7 @@ int grep(char *path, gflag_t fls)
     }
     else if (!(fls & SFLAG))
     {
-        fprintf(stderr, "s21_grep: %s: No such file or directory\n", path);
+        fprintf(stderr, "grep: %s: No such file or directory\n", path);
     }
     return 1;
 }
@@ -325,7 +325,7 @@ int main(int argc, char *argv[])
     int fcount = 0, offs = 0;
     gflag_t fmt = get_flags(argc, argv);
     if (argc == optind)
-        return fprintf(stderr, "Try \'s21_grep --help\' for more information.\n");
+        return fprintf(stderr, "Try \'grep --help\' for more information.\n");
     offs = optind++;
     if (!storage_get(S_BEG) && offs)
         storage_put(argv[offs++]);
