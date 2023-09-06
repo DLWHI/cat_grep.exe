@@ -21,7 +21,7 @@ test_cat: s21_cat
 	$(CAT_TEST)
 #-----grep-----
 grep: dir grep_libs xalloc
-	$(CC) $(CFLAGS) $(GREP_SRC) $(OBJDIR)/*.o -o $(BUILDIR)/grep -lregex
+	$(CC) $(CFLAGS) $(GREP_SRC) $(OBJDIR)/*.o -o $(BUILDDIR)/grep -lregex
 grep_libs:
 	$(CC) $(CFLAGS) $(GREP_LIBS) -c
 	mv *.o $(OBJDIR)
